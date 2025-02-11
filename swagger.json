@@ -1,0 +1,32 @@
+{
+    "definition": {
+      "openapi": "3.0.0",
+      "info": {
+        "title": " Pax Freight",
+        "version": "1.0.0",
+        "description": "Pax Freight API"
+      },
+      "servers": [
+        {
+          "url": "http://localhost:3003",
+          "description": "DEVELOPMENT SERVER"
+        }
+        
+      ],
+      "components": {
+        "securitySchemes": {
+          "Bearer": {
+            "type": "apiKey",
+            "scheme": "bearer",
+            "name": "authorization",
+            "in": "header"
+          }
+        }
+      },
+      "security": {
+        "Bearer": []
+      }
+    },
+    "apis": ["routes/**/*.js"]
+  }
+  
