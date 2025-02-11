@@ -5,5 +5,6 @@ module.exports = function (app) {
     // app.use("/payment", require("./payment/wallet"));
     app.use("/payment", require("./payment/payment"));
     app.use("/multiboxorder", require("./order/multiboxorder"));
+    app.use("/cashfree", require("./payment/cashfreeGateway"));
 
 }
